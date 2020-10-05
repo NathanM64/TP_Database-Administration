@@ -9,3 +9,4 @@
 ## Deuxième Parie:
 - Executé la commande crontab -e
 - Ajouté la ligne "1 * * * 1 mysqldump -uroot -ppassword --all-databases | gzip -9 -c > all_databases.sql.gz"
+- 
