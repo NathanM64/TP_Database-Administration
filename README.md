@@ -1,5 +1,7 @@
-## TP 4
+## TP 4 | Database Administration
+---------------------------------
 ### Première partie :
+---------------------
 - touch Dockerfile
   - FROM mysql:latest
   - RUN apt-get update && apt-get install -y cron logrotate vim
@@ -19,6 +21,7 @@
       - MYSQL_ROOT_PASSWORD: password
   
 ## Deuxième partie :
+--------------------
 - Lancer le docker-compose
 - sudo docker-compose exec mysql bash
   - Dans bash, lancer la commande crontab -e
@@ -28,6 +31,7 @@
 - Toutes cette partie auparavant aurait pu être défini dans le dockerfile, à l'aide de la commande CMD
 
 ## Troisième partie :
+---------------------
 - Dans docker bash, exécuter la commande: CD /etc/logrotate.d/
 - Créer une nouvelle configuration: touch backup-daily
 - Configurer le nouveau fichier: nano backup-daily
