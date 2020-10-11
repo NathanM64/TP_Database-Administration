@@ -1,0 +1,15 @@
+version:  '3.7'
+
+services:
+  mysql:
+    container_name: server
+    restart: on-failure
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./mysql:/docker/var/lib/mysql
+    working_dir: /mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+
